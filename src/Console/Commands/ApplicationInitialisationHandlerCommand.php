@@ -19,7 +19,7 @@ final class ApplicationInitialisationHandlerCommand extends Command
     {
         # Fetch all classes in the /inits directory of the application (not this library)
         if ($inits = glob(base_path('inits/*.php'))) {
-            $this->info('Running unexecuted intialisation commands');
+            $this->info('Running unexecuted initialisation commands');
 
             # Filter out inits that are present in the "init_commands" table
             $inits = array_filter($inits, function ($init) {
@@ -40,7 +40,8 @@ final class ApplicationInitialisationHandlerCommand extends Command
                 $this->line(' - ' . $initName);
 
                 # Include the init file and get the class instance
-                $instance = require $init;
+                require $init;
+                $instance = new $initName();
 
                 # Ensure that it's an instance of AppInitCommand
                 if (!$instance instanceof AppInitCommand) {

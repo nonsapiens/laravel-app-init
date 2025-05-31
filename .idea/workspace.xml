@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f88807c-ba57-4df7-b358-932c575fcf32" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-app-init.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-app-init.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="0f88807c-ba57-4df7-b358-932c575fcf32" name="Changes" comment="Refactor migration and update AppInitCommand for improved clarity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_10_13_114605_create_init_commands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_10_13_114605_create_init_commands_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Libraries/AppInitCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Libraries/AppInitCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Commands/ApplicationInitialisationHandlerCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Commands/ApplicationInitialisationHandlerCommand.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,18 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "stuartsebenza"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;stuartsebenza&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Sebenza-Taxi/laravel-app-init.git",
-    "accountId": "eedd128c-ebc9-48b5-a0ea-a8d639daf04f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Sebenza-Taxi/laravel-app-init.git&quot;,
+    &quot;accountId&quot;: &quot;eedd128c-ebc9-48b5-a0ea-a8d639daf04f&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
@@ -127,6 +126,10 @@
     "laravel_idea.dialogs.helper_code_generation.x": "689",
     "laravel_idea.dialogs.helper_code_generation.y": "426",
     "last_opened_file_path": "/Users/stuartsteedman/Development/packages/laravel-app-init",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -148,11 +151,25 @@
       <option name="presentableId" value="Default" />
       <updated>1728812519877</updated>
       <workItem from="1728812521177" duration="1000" />
-      <workItem from="1748662196996" duration="130000" />
+      <workItem from="1748662196996" duration="227000" />
+      <workItem from="1748662626178" duration="369000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor migration and update AppInitCommand for improved clarity">
+      <option name="closed" value="true" />
+      <created>1748662348171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748662348171</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor migration and update AppInitCommand for improved clarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor migration and update AppInitCommand for improved clarity" />
   </component>
 </project>
