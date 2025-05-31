@@ -3,6 +3,7 @@
 namespace SebenzaTaxi\LaravelAppInit\Libraries;
 
 use Illuminate\Console\Command;
+use Illuminate\Contracts\Console\Kernel;
 
 abstract class AppInitCommand extends Command
 {
@@ -10,6 +11,6 @@ abstract class AppInitCommand extends Command
 
     public function call($command, array $parameters = [])
     {
-        resolve(\Illuminate\Contracts\Console\Kernel::class)->call($command, $parameters);
+        resolve(Kernel::class)->call($command, $parameters);
     }
 }

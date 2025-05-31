@@ -17,6 +17,6 @@ return new class extends Migration {
 
     public function down(): void
     {
-        Schema::dropIfExists('inits');
+        Schema::dropIfExists('init_commands');
     }
 };

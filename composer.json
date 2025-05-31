@@ -22,7 +22,7 @@
     },
     "require": {
         "php": "8.*",
-        "laravel/framework": "11.*"
+        "laravel/framework": "11.*|12.*"
     },
     "minimum-stability": "dev"
 }
