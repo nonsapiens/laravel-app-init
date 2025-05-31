@@ -40,8 +40,7 @@ final class ApplicationInitialisationHandlerCommand extends Command
                 $this->line(' - ' . $initName);
 
                 # Include the init file and get the class instance
-                require $init;
-                $instance = new $initName();
+                $instance = require $init;
 
                 # Ensure that it's an instance of AppInitCommand
                 if (!$instance instanceof AppInitCommand) {

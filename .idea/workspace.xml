@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f88807c-ba57-4df7-b358-932c575fcf32" name="Changes" comment="Refactor migration and update AppInitCommand for improved clarity">
+    <list default="true" id="0f88807c-ba57-4df7-b358-932c575fcf32" name="Changes" comment="Fix typo in initialization command message and refactor instance creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Console/Commands/ApplicationInitialisationHandlerCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Commands/ApplicationInitialisationHandlerCommand.php" afterDir="false" />
     </list>
@@ -152,7 +152,7 @@
       <updated>1728812519877</updated>
       <workItem from="1728812521177" duration="1000" />
       <workItem from="1748662196996" duration="227000" />
-      <workItem from="1748662626178" duration="369000" />
+      <workItem from="1748662626178" duration="1572000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor migration and update AppInitCommand for improved clarity">
       <option name="closed" value="true" />
@@ -162,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748662348171</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix typo in initialization command message and refactor instance creation">
+      <option name="closed" value="true" />
+      <created>1748663031052</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748663031052</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor migration and update AppInitCommand for improved clarity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor migration and update AppInitCommand for improved clarity" />
+    <MESSAGE value="Fix typo in initialization command message and refactor instance creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typo in initialization command message and refactor instance creation" />
   </component>
 </project>
