@@ -4,6 +4,7 @@ namespace SebenzaTaxi\LaravelAppInit\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use SebenzaTaxi\LaravelAppInit\Console\Commands\ApplicationInitialisationHandlerCommand;
+use SebenzaTaxi\LaravelAppInit\Console\Commands\CreateInitCommand;
 
 class AppInitServiceProvider extends ServiceProvider
 {
@@ -21,7 +22,8 @@ class AppInitServiceProvider extends ServiceProvider
         // Console command
         if ($this->app->runningInConsole()) {
             $this->commands([
-                ApplicationInitialisationHandlerCommand::class
+                ApplicationInitialisationHandlerCommand::class,
+                CreateInitCommand::class,
             ]);
         }
     }
