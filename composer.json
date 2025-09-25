@@ -1,5 +1,5 @@
 {
-    "name": "sebenzataxi/laravel-app-init",
+    "name": "nonsapiens/laravel-app-init",
     "description": "A migrations-like application initialiser, designed to allow commands and configurations to be run post-deploy",
     "type": "library",
     "license": "MIT",
@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SebenzaTaxi\\LaravelAppInit\\Providers\\AppInitServiceProvider"
+                "Nonsapiens\\LaravelAppInit\\Providers\\AppInitServiceProvider"
             ]
         }
     },
