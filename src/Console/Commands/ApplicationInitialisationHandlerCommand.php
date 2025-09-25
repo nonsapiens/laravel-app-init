@@ -1,11 +1,11 @@
 <?php
 
-namespace SebenzaTaxi\LaravelAppInit\Console\Commands;
+namespace Nonsapiens\LaravelAppInit\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\OutputStyle;
-use SebenzaTaxi\LaravelAppInit\Libraries\AppInitCommand;
-use SebenzaTaxi\LaravelAppInit\Models\InitCommand;
+use Nonsapiens\LaravelAppInit\Libraries\AppInitCommand;
+use Nonsapiens\LaravelAppInit\Models\InitCommand;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
@@ -44,7 +44,7 @@ final class ApplicationInitialisationHandlerCommand extends Command
 
                 # Ensure that it's an instance of AppInitCommand
                 if (!$instance instanceof AppInitCommand) {
-                    $this->error("     Class in $init must extend \SebenzaTaxi\LaravelAppInit\Libraries\AppInitCommand");
+                    $this->error("     Class in $init must extend \Nonsapiens\LaravelAppInit\Libraries\AppInitCommand");
                     continue;
                 }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace SebenzaTaxi\LaravelAppInit\Providers;
+namespace Nonsapiens\LaravelAppInit\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use SebenzaTaxi\LaravelAppInit\Console\Commands\ApplicationInitialisationHandlerCommand;
-use SebenzaTaxi\LaravelAppInit\Console\Commands\CreateInitCommand;
+use Nonsapiens\LaravelAppInit\Console\Commands\ApplicationInitialisationHandlerCommand;
+use Nonsapiens\LaravelAppInit\Console\Commands\CreateInitCommand;
 
 class AppInitServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace SebenzaTaxi\LaravelAppInit\Console\Commands;
+namespace Nonsapiens\LaravelAppInit\Console\Commands;
 
 use Carbon\Carbon;
 use Illuminate\Console\Command;

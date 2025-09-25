@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f88807c-ba57-4df7-b358-932c575fcf32" name="Changes" comment="Fix typo in initialization command message and refactor instance creation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-    </list>
+    <list default="true" id="0f88807c-ba57-4df7-b358-932c575fcf32" name="Changes" comment="Update package name and repository URL in composer.json and workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +151,7 @@
       <workItem from="1728812521177" duration="1000" />
       <workItem from="1748662196996" duration="227000" />
       <workItem from="1748662626178" duration="1572000" />
-      <workItem from="1758788569192" duration="21000" />
+      <workItem from="1758788569192" duration="163000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor migration and update AppInitCommand for improved clarity">
       <option name="closed" value="true" />
@@ -172,15 +169,35 @@
       <option name="project" value="LOCAL" />
       <updated>1748663031052</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update package name and repository URL in composer.json and workspace.xml">
+      <option name="closed" value="true" />
+      <created>1758788598470</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758788598470</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor migration and update AppInitCommand for improved clarity" />
     <MESSAGE value="Fix typo in initialization command message and refactor instance creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix typo in initialization command message and refactor instance creation" />
+    <MESSAGE value="Update package name and repository URL in composer.json and workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update package name and repository URL in composer.json and workspace.xml" />
   </component>
 </project>

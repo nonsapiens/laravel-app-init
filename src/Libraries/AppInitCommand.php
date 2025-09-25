@@ -1,6 +1,6 @@
 <?php
 
-namespace SebenzaTaxi\LaravelAppInit\Libraries;
+namespace Nonsapiens\LaravelAppInit\Libraries;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\Kernel;
