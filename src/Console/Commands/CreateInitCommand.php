@@ -25,13 +25,15 @@ class CreateInitCommand extends Command
 
         $path = $directory . DIRECTORY_SEPARATOR . $filename;
 
-        $stub = <<<PHP
+        $stub = <<<'PHP'
 <?php
 
 use Nonsapiens\\LaravelAppInit\\Libraries\\AppInitCommand;
 
 return new class extends AppInitCommand
 {
+    protected bool $runEveryTime = false;
+
     public function up()
     {
         //

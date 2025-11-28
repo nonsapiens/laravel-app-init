@@ -24,6 +24,10 @@ final class ApplicationInitialisationHandlerCommand extends Command
             # Filter out inits that are present in the "init_commands" table
             $inits = array_filter($inits, function ($init) {
                 $initName = pathinfo($init, PATHINFO_FILENAME);
+                $instance = require $init;
+                if (method_exists($instance, 'shouldRunEverytime') && $instance->shouldRunEverytime()) {
+                    return true;
+                }
                 return !InitCommand::whereCommandName($initName)->exists();
             });
 
@@ -60,7 +64,12 @@ final class ApplicationInitialisationHandlerCommand extends Command
                 $instance->up();
 
                 # Record that the command was executed
-                InitCommand::create(['command_name' => $initName]);
+                if ($instance->shouldRunEverytime()) {
+                    $commandName = $initName . '_' . date('Ymd_His');
+                } else {
+                    $commandName = $initName;
+                }
+                InitCommand::create(['command_name' => $commandName]);
             }
         } else {
             $this->warn('No initialisation commands found');
