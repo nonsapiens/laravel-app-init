@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f88807c-ba57-4df7-b358-932c575fcf32" name="Changes" comment="Update package name and repository URL in composer.json and workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-app-init.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-app-init.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console/Commands/CreateInitCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Commands/CreateInitCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,11 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/stuartsteedman/Development/packages/laravel-app-init" value="2nNTQlHiyaRMcHLnao1ZudIRYvi" />
+    </persistenceIdMap>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -26,12 +33,12 @@
     &quot;assignee&quot;: &quot;stuartsebenza&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:nonsapiens/laravel-app-init.git&quot;,
-    &quot;accountId&quot;: &quot;eedd128c-ebc9-48b5-a0ea-a8d639daf04f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:nonsapiens/laravel-app-init.git",
+    "accountId": "2aafa6b5-6a55-4c2b-a251-5821deb37a59"
   }
-}</component>
+}]]></component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
@@ -116,33 +123,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;com.laravel_idea.eloquent_global_unguard&quot;: &quot;0&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;laravel_idea.dialogs.helper_code_generation.width&quot;: &quot;349&quot;,
-    &quot;laravel_idea.dialogs.helper_code_generation.x&quot;: &quot;689&quot;,
-    &quot;laravel_idea.dialogs.helper_code_generation.y&quot;: &quot;426&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/stuartsteedman/Development/laravel-app-init&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "com.laravel_idea.eloquent_global_unguard": "0",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "laravel_idea.dialogs.helper_code_generation.width": "349",
+    "laravel_idea.dialogs.helper_code_generation.x": "689",
+    "laravel_idea.dialogs.helper_code_generation.y": "426",
+    "last_opened_file_path": "/Users/stuartsteedman/Development/laravel-app-init",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PS-251.28293.47" />
-        <option value="bundled-php-predefined-a98d8de5180a-e5747d4f5a45-com.jetbrains.php.sharedIndexes-PS-251.28293.47" />
-      </set>
-    </attachedChunks>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -156,6 +161,8 @@
       <workItem from="1748662626178" duration="1572000" />
       <workItem from="1758788569192" duration="163000" />
       <workItem from="1758788768134" duration="529000" />
+      <workItem from="1764335391848" duration="623000" />
+      <workItem from="1774527764024" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor migration and update AppInitCommand for improved clarity">
       <option name="closed" value="true" />
@@ -203,5 +210,13 @@
     <MESSAGE value="Fix typo in initialization command message and refactor instance creation" />
     <MESSAGE value="Update package name and repository URL in composer.json and workspace.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="Update package name and repository URL in composer.json and workspace.xml" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
