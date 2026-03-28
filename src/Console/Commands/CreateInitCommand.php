@@ -28,13 +28,13 @@ class CreateInitCommand extends Command
         $stub = <<<'PHP'
 <?php
 
-use Nonsapiens\\LaravelAppInit\\Libraries\\AppInitCommand;
+use Nonsapiens\LaravelAppInit\Libraries\AppInitCommand;
 
 return new class extends AppInitCommand
 {
     protected bool $runEveryTime = false;
 
-    public function up()
+    public function up(): void
     {
         //
     }
