@@ -4,6 +4,7 @@ namespace Nonsapiens\LaravelAppInit\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\OutputStyle;
+use Nonsapiens\LaravelAppInit\AppInit;
 use Nonsapiens\LaravelAppInit\Libraries\AppInitCommand;
 use Nonsapiens\LaravelAppInit\Models\InitCommand;
 use Symfony\Component\Console\Input\ArgvInput;
@@ -17,15 +18,18 @@ final class ApplicationInitialisationHandlerCommand extends Command
 
     public function handle(): void
     {
-        # Fetch all classes in the /inits directory of the application (not this library)
-        if ($inits = glob(base_path('inits/*.php'))) {
+        # Fetch all init files from the application's /inits directory and any registered package paths
+        if ($inits = AppInit::files()) {
             $this->info('Running unexecuted initialisation commands');
 
             # Filter out inits that are present in the "init_commands" table
-            $inits = array_filter($inits, function ($init) {
-                $initName = pathinfo($init, PATHINFO_FILENAME);
+            $inits = array_filter($inits, function ($init, $initName) {
+                $instance = require $init;
+                if (method_exists($instance, 'shouldRunEverytime') && $instance->shouldRunEverytime()) {
+                    return true;
+                }
                 return !InitCommand::whereCommandName($initName)->exists();
-            });
+            }, ARRAY_FILTER_USE_BOTH);
 
             if (!$inits) {
                 $this->line('Nothing to initialise');
@@ -33,10 +37,9 @@ final class ApplicationInitialisationHandlerCommand extends Command
             }
 
             # Execute them in name-ascending order
-            sort($inits);
+            ksort($inits);
 
-            foreach ($inits as $init) {
-                $initName = pathinfo($init, PATHINFO_FILENAME);
+            foreach ($inits as $initName => $init) {
                 $this->line(' - ' . $initName);
 
                 # Include the init file and get the class instance
@@ -60,7 +63,12 @@ final class ApplicationInitialisationHandlerCommand extends Command
                 $instance->up();
 
                 # Record that the command was executed
-                InitCommand::create(['command_name' => $initName]);
+                if ($instance->shouldRunEverytime()) {
+                    $commandName = $initName . '_' . date('Ymd_His');
+                } else {
+                    $commandName = $initName;
+                }
+                InitCommand::create(['command_name' => $commandName]);
             }
         } else {
             $this->warn('No initialisation commands found');
